@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333; /* Improved contrast for better readability */
+    font-size: 16px; /* Slightly increased font size for better readability */
+    font-family: Arial, sans-serif; /* Use a more common font stack */
+}
+
+.container {
+    margin: auto;
+    max-width: 100%; /* Use a relative unit for max-width */
+    padding: 0 20px; /* Add padding for better mobile readability */
+    box-sizing: border-box; /* Include padding in the max-width calculation */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px; /* Adjust the max-width for larger screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px; /* Adjust the max-width for even larger screens */
+    }
+}

@@ -2,10 +2,9 @@
     text-align: left;
     width: 25%;
     float: left;
-    position: relative; /* Added to position the popover relative to the container */
     cursor: pointer; /* Change cursor to indicate interactivity */
+    position: relative;
 }
-
 
 .locations h3,
 .locations h4,
@@ -21,7 +20,6 @@
 .amenities h3 {
     font-weight: 600;
 }
-
 
 .filters {
     border-radius: 4px;
@@ -47,6 +45,7 @@ section.filters button {
 section.filters button:hover {
     opacity: 0.9;
 }
+
 .locations .popover, .amenities .popover {
     visibility: hidden;
     position: absolute;
@@ -62,8 +61,11 @@ section.filters button:hover {
     flex-direction: column;
 }
 
+/* Ensure focusable elements are keyboard accessible */
 .locations:hover .popover, .amenities:hover .popover {
     visibility: visible;
+    /* Add a focus style for keyboard navigation */
+    outline: 2px solid #FF5A5F;
 }
 
 li {

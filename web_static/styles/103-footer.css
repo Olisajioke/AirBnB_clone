@@ -1,0 +1,16 @@
+footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align content vertically to the center */
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    color: #333; /* Improved text color for better contrast */
+    text-align: center;
+}
