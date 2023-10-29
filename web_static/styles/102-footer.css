@@ -1,0 +1,29 @@
+footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+footer p {
+    color: black;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        height: 40px; /* Adjust height for smaller screens */
+        line-height: 40px; /* Match the adjusted height */
+    }
+
+    footer p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

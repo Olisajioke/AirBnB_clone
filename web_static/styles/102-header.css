@@ -1,0 +1,29 @@
+header {
+    background-color: #333; /* Change color to a suitable background color */
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px; /* Add padding for better mobile readability */
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
+header .logo {
+    height: 60px;
+    width: auto; /* Adjust to allow the logo to scale with its content */
+    background: url("../images/logo.png") no-repeat center;
+    background-size: contain; /* Ensure the logo fits within the container */
+    padding-left: 20px;
+    margin-right: auto; /* Push the logo to the left side of the header */
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    header .logo {
+        height: 40px; /* Adjust logo size for smaller screens */
+    }
+}
